@@ -30,6 +30,7 @@ spec:
         - {{ $fullName }}
       {{- end }}
       {{- end }}
+      parse: json
       {{- if or .Values.openshift.forwarding.infra.elasticsearch .Values.openshift.forwarding.infra.splunk }}
     - inputRefs:
         - infrastructure
